@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed DetailVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FeedDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FeedDetailVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a5y-3w-wsH">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-mr-RtP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-lP-icq" userLabel="topiconArea">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Icw-PK-L6t">
+                                                        <rect key="frame" x="16" y="31" width="388" height="27"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUS-av-NR9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="ghp-0M-Wqg"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="ic_more"/>
+                                                                <connections>
+                                                                    <action selector="moreBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ptt-qo-NPs"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLr-sh-esf">
+                                                                <rect key="frame" x="50" y="0.0" width="288" height="24"/>
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="2022">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="SFProDisplay-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="년">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" 10">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="SFProDisplay-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="월">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="29">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="SFProDisplay-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="일">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=" (">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="SFProDisplay-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content="토">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                    <fragment content=")">
+                                                                        <attributes>
+                                                                            <color key="NSColor" red="0.8784313725490196" green="0.88235294117647056" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <font key="NSFont" size="16" name="SFProDisplay-Medium"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-83-CWw">
+                                                                <rect key="frame" x="338" y="0.0" width="50" height="25"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="WLr-sh-esf" firstAttribute="centerX" secondItem="Icw-PK-L6t" secondAttribute="centerX" id="dii-vd-4y1"/>
+                                                            <constraint firstAttribute="height" constant="27" id="dqe-0F-WvC"/>
+                                                            <constraint firstItem="KUS-av-NR9" firstAttribute="centerY" secondItem="WLr-sh-esf" secondAttribute="centerY" id="oOe-dp-kTL"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="414" id="WaD-ym-YYe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Icw-PK-L6t" secondAttribute="trailing" constant="10" id="gip-Fy-Zxd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Icw-PK-L6t" secondAttribute="bottom" constant="22" id="r2K-hf-tCW"/>
+                                                    <constraint firstItem="Icw-PK-L6t" firstAttribute="leading" secondItem="sCd-lP-icq" secondAttribute="leading" constant="16" id="rfy-d1-PXf"/>
+                                                    <constraint firstAttribute="height" constant="80" id="tt3-ao-kPm"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopicEnd" translatesAutoresizingMaskIntoConstraints="NO" id="DyR-Ub-wHg">
+                                                <rect key="frame" x="110" y="90" width="194" height="194"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="194" id="FLF-ez-cma"/>
+                                                    <constraint firstAttribute="width" constant="194" id="dLr-Tt-9b1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzQ-GN-l6T">
+                                                <rect key="frame" x="16" y="289" width="382" height="50.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" Q. ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="내">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="삶을">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="색으로">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="표현하면">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">, 
+ </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="무슨">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="색일까요">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="20" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Jg-Vq-kiK">
+                                                <rect key="frame" x="16" y="373.5" width="382" height="826.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="어렸을">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="때부터">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="나는">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="파란색을">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="좋아했다">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=". ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="남자아이라서">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="? ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="아님">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="흔하게">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="볼">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="수">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="있는">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="색이라서">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="? ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="정확한">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="이유는">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="모르겠지만">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="아마">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="푸른">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="하늘과">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="관련이">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="있지">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="않을까">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="생각해본다">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">. 
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="하지만">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="애석하게도">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="내가">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="좋아하는">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="파란색과">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="다르게">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="내">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="삶은">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="좀처럼">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="파란색으로">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="느껴지지">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="않는다">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=". ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="누군가">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="나의">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="삶을">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="본다면">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="아마">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="짙은">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="회색쯤으로">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="보이지">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="않을까">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="생각한다">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="AppleSDGothicNeo-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="16" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DyR-Ub-wHg" firstAttribute="centerX" secondItem="sCd-lP-icq" secondAttribute="centerX" id="0gz-zx-WzU"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Jg-Vq-kiK" secondAttribute="trailing" constant="16" id="0sw-or-HC2"/>
+                                            <constraint firstAttribute="trailing" secondItem="sCd-lP-icq" secondAttribute="trailing" id="3Vo-jB-ozT"/>
+                                            <constraint firstItem="0Jg-Vq-kiK" firstAttribute="leading" secondItem="tnA-mr-RtP" secondAttribute="leading" constant="16" id="3es-i1-hMa"/>
+                                            <constraint firstAttribute="bottom" secondItem="0Jg-Vq-kiK" secondAttribute="bottom" id="5HK-rb-Ky4"/>
+                                            <constraint firstItem="DyR-Ub-wHg" firstAttribute="top" secondItem="sCd-lP-icq" secondAttribute="bottom" constant="10" id="5kz-XY-8gw"/>
+                                            <constraint firstItem="sCd-lP-icq" firstAttribute="leading" secondItem="tnA-mr-RtP" secondAttribute="leading" id="E0u-5K-NJ1"/>
+                                            <constraint firstAttribute="trailing" secondItem="sCd-lP-icq" secondAttribute="trailing" id="I4z-yz-jMW"/>
+                                            <constraint firstItem="gzQ-GN-l6T" firstAttribute="top" secondItem="DyR-Ub-wHg" secondAttribute="bottom" constant="5" id="Jra-dy-GPc"/>
+                                            <constraint firstItem="0Jg-Vq-kiK" firstAttribute="top" secondItem="gzQ-GN-l6T" secondAttribute="bottom" constant="34" id="LRH-c3-gvp"/>
+                                            <constraint firstItem="sCd-lP-icq" firstAttribute="top" secondItem="tnA-mr-RtP" secondAttribute="top" id="ZJd-Fm-Tz5"/>
+                                            <constraint firstAttribute="trailing" secondItem="gzQ-GN-l6T" secondAttribute="trailing" constant="16" id="cG6-mC-a9W"/>
+                                            <constraint firstItem="sCd-lP-icq" firstAttribute="leading" secondItem="tnA-mr-RtP" secondAttribute="leading" id="fd7-ny-btQ"/>
+                                            <constraint firstAttribute="height" constant="1200" id="t1h-wt-OMa"/>
+                                            <constraint firstItem="gzQ-GN-l6T" firstAttribute="leading" secondItem="tnA-mr-RtP" secondAttribute="leading" constant="16" id="vJb-0m-9pT"/>
+                                            <constraint firstItem="sCd-lP-icq" firstAttribute="top" secondItem="tnA-mr-RtP" secondAttribute="top" id="xTs-EU-jT9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tnA-mr-RtP" firstAttribute="top" secondItem="a5y-3w-wsH" secondAttribute="top" id="MQb-2d-n4L"/>
+                                    <constraint firstItem="tnA-mr-RtP" firstAttribute="centerX" secondItem="a5y-3w-wsH" secondAttribute="centerX" id="OAn-FW-yIN"/>
+                                    <constraint firstAttribute="trailing" secondItem="tnA-mr-RtP" secondAttribute="trailing" id="com-8B-M7C"/>
+                                    <constraint firstItem="tnA-mr-RtP" firstAttribute="leading" secondItem="a5y-3w-wsH" secondAttribute="leading" id="gOC-pA-vH5"/>
+                                    <constraint firstAttribute="bottom" secondItem="tnA-mr-RtP" secondAttribute="bottom" id="mbG-XO-jYj"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWe-nw-vgk">
+                                <rect key="frame" x="320" y="738" width="94" height="94"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="BtnSave"/>
+                                <connections>
+                                    <action selector="savePopupBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y31-Rf-blD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.56032019850000003" green="0.53556954859999995" blue="0.92160731549999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="a5y-3w-wsH" secondAttribute="bottom" id="2Zi-v6-Vhv"/>
+                            <constraint firstItem="a5y-3w-wsH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JWU-J9-fWL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zWe-nw-vgk" secondAttribute="bottom" constant="30" id="KIG-Un-b2p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zWe-nw-vgk" secondAttribute="trailing" id="Ore-SI-gUj"/>
+                            <constraint firstItem="a5y-3w-wsH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pKj-xe-GGb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="a5y-3w-wsH" secondAttribute="trailing" id="sEn-OO-BKB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zWe-nw-vgk" secondAttribute="trailing" id="t0U-Dm-bE3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QtitleLabel" destination="gzQ-GN-l6T" id="LC6-dl-SWo"/>
+                        <outlet property="bgColorView" destination="5EZ-qb-Rvc" id="cYa-qh-QY6"/>
+                        <outlet property="closeBtn" destination="i3C-83-CWw" id="rqn-Wc-Uge"/>
+                        <outlet property="dateString" destination="WLr-sh-esf" id="4Df-zG-SnT"/>
+                        <outlet property="imageView" destination="DyR-Ub-wHg" id="g9k-Uy-7iB"/>
+                        <outlet property="textView" destination="0Jg-Vq-kiK" id="j7N-PZ-bb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="-125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="24" width="25" height="25"/>
+        <image name="BtnSave" width="94" height="94"/>
+        <image name="TopicEnd" width="1152" height="1152"/>
+        <image name="ic_more" width="24" height="24"/>
+    </resources>
+</document>

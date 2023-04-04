@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scarp DelVC-->
+        <scene sceneID="f8z-dD-xcX">
+            <objects>
+                <viewController storyboardIdentifier="ScarpDelVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="brz-Yg-oVC" customClass="ScarpDelVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZu-3k-Hzh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-9n-U1L">
+                                <rect key="frame" x="0.0" y="-5" width="390" height="849"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-zy-6IY">
+                                        <rect key="frame" x="21" y="379.66666666666669" width="348" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYk-w4-c1C">
+                                                <rect key="frame" x="72.666666666666686" y="30.666666666666629" width="203" height="20.333333333333329"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="총 5개의 기록이 삭제되었어요.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33355170490000002" green="0.34873744849999999" blue="0.36470824480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SYk-w4-c1C" firstAttribute="centerY" secondItem="UkK-zy-6IY" secondAttribute="centerY" id="HBQ-GF-PyX"/>
+                                            <constraint firstItem="SYk-w4-c1C" firstAttribute="centerX" secondItem="UkK-zy-6IY" secondAttribute="centerX" id="NAN-Li-Niw"/>
+                                            <constraint firstAttribute="width" constant="348" id="ady-cB-NJX"/>
+                                            <constraint firstAttribute="height" constant="82" id="fir-zK-6mN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UkK-zy-6IY" firstAttribute="centerX" secondItem="Nzu-9n-U1L" secondAttribute="centerX" id="3Vv-RN-eFz"/>
+                                    <constraint firstItem="UkK-zy-6IY" firstAttribute="centerY" secondItem="Nzu-9n-U1L" secondAttribute="centerY" constant="-4" id="TxN-lv-CzG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M0W-KB-biY"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="M0W-KB-biY" firstAttribute="bottom" secondItem="Nzu-9n-U1L" secondAttribute="bottom" constant="-34" id="8qe-Dg-ZTj"/>
+                            <constraint firstItem="M0W-KB-biY" firstAttribute="trailing" secondItem="Nzu-9n-U1L" secondAttribute="trailing" id="IBz-6z-bzW"/>
+                            <constraint firstItem="Nzu-9n-U1L" firstAttribute="top" secondItem="M0W-KB-biY" secondAttribute="top" constant="-52" id="NWJ-A8-h1I"/>
+                            <constraint firstItem="Nzu-9n-U1L" firstAttribute="leading" secondItem="M0W-KB-biY" secondAttribute="leading" id="tIR-IN-9L0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="Nzu-9n-U1L" id="w4a-gz-UIx"/>
+                        <outlet property="text" destination="SYk-w4-c1C" id="yhL-gA-GHS"/>
+                        <outlet property="whiteBg" destination="UkK-zy-6IY" id="9Qy-GT-ceh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2o6-X7-sdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7155" y="-189"/>
+        </scene>
+    </scenes>
+</document>

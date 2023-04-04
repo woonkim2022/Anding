@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "AppPolicyCheck.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

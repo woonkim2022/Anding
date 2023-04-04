@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delete PopVC-->
+        <scene sceneID="yoV-W8-z0t">
+            <objects>
+                <viewController storyboardIdentifier="DeletePopVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uiT-ol-lNy" customClass="DeletePopVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kiA-9y-vju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xL2-3Z-Yux">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="904"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGy-Ha-Asw">
+                                        <rect key="frame" x="52.5" y="371.5" width="315" height="145"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="f6F-dF-btj">
+                                                <rect key="frame" x="11" y="85" width="293" height="47"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G92-Us-BXI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="47" id="Ay2-mc-LsQ"/>
+                                                            <constraint firstAttribute="width" constant="140" id="hxc-nG-Wp1"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="cButton"/>
+                                                        <connections>
+                                                            <action selector="cancelBtn:" destination="uiT-ol-lNy" eventType="touchUpInside" id="pqj-YG-ihn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQs-Vz-nFI">
+                                                        <rect key="frame" x="153" y="0.0" width="140" height="47"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="47" id="LWr-Nd-N90"/>
+                                                            <constraint firstAttribute="width" constant="140" id="ncx-a5-VnQ"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="DeleteButton"/>
+                                                        <connections>
+                                                            <action selector="DeleteBtn:" destination="uiT-ol-lNy" eventType="touchUpInside" id="8NH-Fc-c8P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajp-Mf-1fT">
+                                                <rect key="frame" x="75.5" y="20" width="164" height="21.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="이">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33355170490000002" green="0.34873744849999999" blue="0.36470824480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33355170490000002" green="0.34873744849999999" blue="0.36470824480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="SFProDisplay-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="게시글을 삭제할까요?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33355170490000002" green="0.34873744849999999" blue="0.36470824480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM3-06-WeT">
+                                                <rect key="frame" x="75" y="55" width="165.5" height="15.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165.5" id="Suu-m8-YXn"/>
+                                                    <constraint firstAttribute="height" constant="15.5" id="YYl-oC-hz5"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="삭제된 게시글은 되돌릴수 없어요.">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="EM3-06-WeT" firstAttribute="centerX" secondItem="kGy-Ha-Asw" secondAttribute="centerX" id="2Kf-US-sDm"/>
+                                            <constraint firstItem="EM3-06-WeT" firstAttribute="centerX" secondItem="Ajp-Mf-1fT" secondAttribute="centerX" id="4kz-1x-onb"/>
+                                            <constraint firstAttribute="trailing" secondItem="f6F-dF-btj" secondAttribute="trailing" constant="11" id="70a-e6-GAo"/>
+                                            <constraint firstItem="f6F-dF-btj" firstAttribute="centerX" secondItem="kGy-Ha-Asw" secondAttribute="centerX" id="DQr-Wb-ed6"/>
+                                            <constraint firstItem="Ajp-Mf-1fT" firstAttribute="top" secondItem="kGy-Ha-Asw" secondAttribute="top" constant="20" id="G76-4o-q9P"/>
+                                            <constraint firstItem="EM3-06-WeT" firstAttribute="top" secondItem="Ajp-Mf-1fT" secondAttribute="bottom" constant="13.5" id="Pfg-Xu-lUc"/>
+                                            <constraint firstAttribute="height" constant="145" id="PzV-kC-vWD"/>
+                                            <constraint firstItem="f6F-dF-btj" firstAttribute="top" secondItem="EM3-06-WeT" secondAttribute="bottom" constant="14.5" id="bWm-ei-e4j"/>
+                                            <constraint firstItem="f6F-dF-btj" firstAttribute="leading" secondItem="kGy-Ha-Asw" secondAttribute="leading" constant="11" id="c3s-Wk-3aM"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="u9D-Z8-X0h"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdT-Nh-NVp">
+                                        <rect key="frame" x="33" y="411" width="348" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-3i-7VI">
+                                                <rect key="frame" x="69.5" y="31" width="209" height="20.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="해당 게시글이 삭제 되었습니다.">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.33355170490000002" green="0.34873744849999999" blue="0.36470824480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="17" name="AppleSDGothicNeo-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AkN-3i-7VI" firstAttribute="centerY" secondItem="cdT-Nh-NVp" secondAttribute="centerY" id="CTm-oA-fJd"/>
+                                            <constraint firstItem="AkN-3i-7VI" firstAttribute="centerX" secondItem="cdT-Nh-NVp" secondAttribute="centerX" id="E7Y-J4-LGB"/>
+                                            <constraint firstAttribute="width" constant="348" id="N81-Qb-POp"/>
+                                            <constraint firstAttribute="height" constant="82" id="fmX-z4-SbH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kGy-Ha-Asw" firstAttribute="centerX" secondItem="xL2-3Z-Yux" secondAttribute="centerX" constant="3" id="AaH-nq-6f9"/>
+                                    <constraint firstItem="cdT-Nh-NVp" firstAttribute="centerX" secondItem="xL2-3Z-Yux" secondAttribute="centerX" id="H3p-3a-eLO"/>
+                                    <constraint firstItem="kGy-Ha-Asw" firstAttribute="centerY" secondItem="xL2-3Z-Yux" secondAttribute="centerY" constant="-8" id="Ko2-Cd-pkJ"/>
+                                    <constraint firstItem="cdT-Nh-NVp" firstAttribute="centerY" secondItem="xL2-3Z-Yux" secondAttribute="centerY" id="d6F-ul-Xab"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SSC-ke-eak"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xL2-3Z-Yux" firstAttribute="top" secondItem="kiA-9y-vju" secondAttribute="top" id="NR4-68-CPQ"/>
+                            <constraint firstAttribute="bottom" secondItem="xL2-3Z-Yux" secondAttribute="bottom" constant="-8" id="SKE-5A-Chi"/>
+                            <constraint firstItem="SSC-ke-eak" firstAttribute="trailing" secondItem="xL2-3Z-Yux" secondAttribute="trailing" id="bWt-EI-Ebn"/>
+                            <constraint firstItem="xL2-3Z-Yux" firstAttribute="leading" secondItem="SSC-ke-eak" secondAttribute="leading" id="qgF-de-lWm"/>
+                            <constraint firstAttribute="trailing" secondItem="xL2-3Z-Yux" secondAttribute="trailing" id="tzt-22-sFI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allPopBg" destination="xL2-3Z-Yux" id="Sd9-jp-Et9"/>
+                        <outlet property="deleteEndPop" destination="cdT-Nh-NVp" id="TyL-jp-QoH"/>
+                        <outlet property="deleteText" destination="AkN-3i-7VI" id="vaT-F2-4V7"/>
+                        <outlet property="popupBg" destination="kGy-Ha-Asw" id="X51-9j-IYd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CcL-de-UT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DeleteButton" width="140" height="47"/>
+        <image name="cButton" width="140" height="47"/>
+    </resources>
+</document>

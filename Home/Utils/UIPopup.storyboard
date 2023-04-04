@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UIPopup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="UIPopup" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNp-A5-pat">
+                                <rect key="frame" x="0.0" y="-4" width="414" height="900"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-I3-cfD">
+                                        <rect key="frame" x="33" y="405" width="348" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj8-LK-FaG">
+                                                <rect key="frame" x="98" y="20" width="152" height="20"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="문답이">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="SFProDisplay-Bold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="저장되었습니다">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSX-kN-zHe">
+                                                <rect key="frame" x="79" y="48" width="190" height="15"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="문답을">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="모아서">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="자서전을">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="만들">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="수">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="있어요">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=";)">
+                                                        <attributes>
+                                                            <font key="NSFont" size="12" name="SFProDisplay-Regular"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="1BE-Ou-w6r"/>
+                                            <constraint firstItem="Jj8-LK-FaG" firstAttribute="top" secondItem="MdW-I3-cfD" secondAttribute="top" constant="20" id="ByI-yg-BWm"/>
+                                            <constraint firstAttribute="width" constant="348" id="FzC-Hn-SEO"/>
+                                            <constraint firstItem="kSX-kN-zHe" firstAttribute="top" secondItem="Jj8-LK-FaG" secondAttribute="bottom" constant="8" id="LfZ-s3-YLN"/>
+                                            <constraint firstItem="kSX-kN-zHe" firstAttribute="centerX" secondItem="Jj8-LK-FaG" secondAttribute="centerX" id="eK4-lp-Mjl"/>
+                                            <constraint firstItem="Jj8-LK-FaG" firstAttribute="centerX" secondItem="MdW-I3-cfD" secondAttribute="centerX" id="hMa-mk-vpl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MdW-I3-cfD" firstAttribute="centerY" secondItem="CNp-A5-pat" secondAttribute="centerY" constant="-4" id="a8W-z9-UbA"/>
+                                    <constraint firstItem="MdW-I3-cfD" firstAttribute="centerX" secondItem="CNp-A5-pat" secondAttribute="centerX" id="l0H-XY-1pk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CNp-A5-pat" secondAttribute="trailing" id="65y-9V-O53"/>
+                            <constraint firstItem="CNp-A5-pat" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XTO-ne-Kwr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="CNp-A5-pat" secondAttribute="bottom" constant="-34" id="gHU-Zu-RVs"/>
+                            <constraint firstItem="CNp-A5-pat" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-52" id="hYz-lD-Dsj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Ptitle" destination="Jj8-LK-FaG" id="cLx-ra-Bc3"/>
+                        <outlet property="blackView" destination="CNp-A5-pat" id="QYC-20-uC1"/>
+                        <outlet property="decTitle" destination="kSX-kN-zHe" id="gNI-11-eX7"/>
+                        <outlet property="popupView" destination="MdW-I3-cfD" id="Yj4-Ji-wF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="27"/>
+        </scene>
+    </scenes>
+</document>

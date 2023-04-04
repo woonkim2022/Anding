@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DailyBigCell" reuseIdentifier="DailyBigCell" id="guc-yG-ExB" customClass="DailyBigCell" customModule="Anding" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="355"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="355"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="YVA-aj-HLy" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="355"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ex" translatesAutoresizingMaskIntoConstraints="NO" id="qtN-02-yVQ">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="355"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bGradient" translatesAutoresizingMaskIntoConstraints="NO" id="VQW-iB-FR8">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="355"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-mK-ihQ">
+                                <rect key="frame" x="13" y="322" width="154" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="N0C-l1-22H"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="그때 기억">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56032019850000003" green="0.53556954859999995" blue="0.92160731549999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wM2-mK-ihQ" firstAttribute="leading" secondItem="YVA-aj-HLy" secondAttribute="leading" constant="13" id="5Yo-AW-wHe"/>
+                            <constraint firstItem="qtN-02-yVQ" firstAttribute="top" secondItem="YVA-aj-HLy" secondAttribute="top" id="8V9-l7-hJ3"/>
+                            <constraint firstItem="qtN-02-yVQ" firstAttribute="top" secondItem="YVA-aj-HLy" secondAttribute="top" id="MlC-8f-Cqi"/>
+                            <constraint firstAttribute="trailing" secondItem="VQW-iB-FR8" secondAttribute="trailing" id="UM0-JC-IsR"/>
+                            <constraint firstItem="VQW-iB-FR8" firstAttribute="leading" secondItem="YVA-aj-HLy" secondAttribute="leading" id="WYY-x2-JHL"/>
+                            <constraint firstItem="qtN-02-yVQ" firstAttribute="leading" secondItem="YVA-aj-HLy" secondAttribute="leading" id="XgX-e3-ash"/>
+                            <constraint firstAttribute="bottom" secondItem="wM2-mK-ihQ" secondAttribute="bottom" constant="13" id="Xxz-xU-6SW"/>
+                            <constraint firstItem="wM2-mK-ihQ" firstAttribute="leading" secondItem="YVA-aj-HLy" secondAttribute="leading" constant="13" id="Zi3-3z-FuM"/>
+                            <constraint firstItem="qtN-02-yVQ" firstAttribute="centerX" secondItem="wM2-mK-ihQ" secondAttribute="centerX" id="ajn-3T-NBm"/>
+                            <constraint firstAttribute="bottom" secondItem="VQW-iB-FR8" secondAttribute="bottom" id="ekS-jV-Cat"/>
+                            <constraint firstItem="VQW-iB-FR8" firstAttribute="top" secondItem="YVA-aj-HLy" secondAttribute="top" id="goP-7z-35a"/>
+                            <constraint firstAttribute="bottom" secondItem="qtN-02-yVQ" secondAttribute="bottom" id="rFA-H3-PXD"/>
+                            <constraint firstAttribute="trailing" secondItem="wM2-mK-ihQ" secondAttribute="trailing" constant="13" id="rib-2v-EKE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YVA-aj-HLy" secondAttribute="bottom" id="NUP-fM-qRC"/>
+                <constraint firstItem="YVA-aj-HLy" firstAttribute="leading" secondItem="guc-yG-ExB" secondAttribute="leading" id="cMr-CP-u4c"/>
+                <constraint firstAttribute="trailing" secondItem="YVA-aj-HLy" secondAttribute="trailing" id="ceg-xd-7O8"/>
+                <constraint firstItem="YVA-aj-HLy" firstAttribute="top" secondItem="guc-yG-ExB" secondAttribute="top" id="q6a-CM-gRs"/>
+            </constraints>
+            <size key="customSize" width="180" height="355"/>
+            <connections>
+                <outlet property="cationLabel" destination="wM2-mK-ihQ" id="ZMf-07-cfH"/>
+                <outlet property="containerView" destination="YVA-aj-HLy" id="pR3-27-XW8"/>
+                <outlet property="dImageView" destination="qtN-02-yVQ" id="hyn-p7-M8J"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="-258.14732142857144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bGradient" width="169" height="310"/>
+        <image name="ex" width="375" height="812"/>
+    </resources>
+</document>

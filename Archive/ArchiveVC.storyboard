@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ArchiveVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ArchiveVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ArchiveVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6y-ft-yDC">
+                                <rect key="frame" x="0.0" y="154" width="414" height="659"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="cvq-jg-Nui"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="jdi-a6-Gab" kind="embed" id="gpm-iW-utq"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNB-qs-y4H">
+                                <rect key="frame" x="332" y="731" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="0eB-Q2-6YN"/>
+                                    <constraint firstAttribute="height" constant="72" id="5yU-sP-0Hn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="BtnMake"/>
+                                <connections>
+                                    <action selector="bookmakeBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TBY-43-ynT"/>
+                                    <action selector="myBookmakeBtn:" destination="0Nm-aR-Gg1" eventType="touchUpInside" id="KRX-41-FFZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxu-12-ryn">
+                                <rect key="frame" x="16" y="101" width="83.5" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="아카이브">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="AppleSDGothicNeo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85Q-a9-NSy">
+                                <rect key="frame" x="352" y="101" width="46" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="1dQ-oZ-TH3"/>
+                                    <constraint firstAttribute="width" constant="46" id="Kh2-4I-zAL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_search_24"/>
+                                <connections>
+                                    <action selector="searchBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mvR-DX-jwd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.2416858673" green="0.2500026226" blue="0.28337335590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="85Q-a9-NSy" firstAttribute="centerY" secondItem="cxu-12-ryn" secondAttribute="centerY" id="1ao-5e-gAV"/>
+                            <constraint firstItem="cxu-12-ryn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7ap-aW-YRC"/>
+                            <constraint firstItem="85Q-a9-NSy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="57" id="Dpw-9g-ieL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UNB-qs-y4H" secondAttribute="bottom" constant="10" id="MkY-BG-XFk"/>
+                            <constraint firstItem="t6y-ft-yDC" firstAttribute="top" secondItem="cxu-12-ryn" secondAttribute="bottom" constant="26" id="PEz-mC-3gh"/>
+                            <constraint firstItem="t6y-ft-yDC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="aUK-q4-MeI"/>
+                            <constraint firstItem="t6y-ft-yDC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fUZ-ao-o6Y"/>
+                            <constraint firstItem="t6y-ft-yDC" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="h9J-VC-B4Q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="85Q-a9-NSy" secondAttribute="trailing" constant="16" id="krq-DP-Jjm"/>
+                            <constraint firstItem="cxu-12-ryn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="57" id="m8W-rA-op2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UNB-qs-y4H" secondAttribute="trailing" constant="10" id="nHx-GW-SzI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarItemArchive" selectedImage="TabBarItemArchiveSelected" id="Hpz-jF-maS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tabArea" destination="t6y-ft-yDC" id="EaJ-Ri-jzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0Nm-aR-Gg1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="-1"/>
+        </scene>
+        <!--Root TabVC-->
+        <scene sceneID="xLi-G0-wEd">
+            <objects>
+                <viewController storyboardIdentifier="rootTabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jdi-a6-Gab" customClass="rootTabVC" customModule="Anding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f15-kH-G4O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="659"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U2w-fP-ghn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76b-sh-MdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BtnMake" width="88" height="88"/>
+        <image name="TabBarItemArchive" width="46" height="46"/>
+        <image name="TabBarItemArchiveSelected" width="46" height="46"/>
+        <image name="ic_search_24" width="46" height="27"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
